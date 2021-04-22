@@ -1,0 +1,3 @@
+flexytemplates_routes:
+  type: annotation
+  resource: '../src/Controller/'

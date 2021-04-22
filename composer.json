@@ -1,0 +1,37 @@
+{
+  "name": "flexycms/flexytemlates-bundle",
+  "version": "0.1.0",
+  "type": "symfony-bundle",
+  "description": "Module for template editing",
+  "license": "proprietary",
+  "require": {
+    "php": "^7.3",
+    "flexycms/flexyadminframe-bundle": "^0.1.0",
+    "flexycms/flexyadminhome-bundle": "^0.1.0",
+    "flexycms/flexycache-bundle": "^0.1.0"
+  },
+  "require-dev": {
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "flexycms\\FlexyTemplatesBundle\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "flexycms\\FlexyTemplatesBundle\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test" : "./vendor/bin/simple-phpunit"
+  },
+  "extra": {
+    "symfony": {
+      "allow-contrib": false,
+      "require": "5.0.*"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{% extends '@FlexyAdminFrame/adminpanelbase.html.twig' %}
+
+{% block content %}
+
+<table class="flexy-table" data-ajax="{{ ajax }}" data-serverside="false" data-checkboxes="false">
+	<thead>
+		<tr>
+			<th data-searchable="false" data-orderable="false" data-type=""></th> {# Кнопки #}
+			<th data-searchable="true" data-orderable="true" data-type="string">Название</th>
+			<th data-searchable="true" data-orderable="true" data-type="string">Тип</th>
+			<th data-searchable="false" data-orderable="true" data-type="datetime">Дата изменения</th>
+			<th data-searchable="true" data-orderable="true" data-type="num">Размер, б</th>
+		</tr>
+	</thead>
+</table>
+
+{% endblock %}

@@ -1,0 +1,13 @@
+parameters:
+# Здесь могут быть параметры бандла
+
+services:
+
+  # Конфигурация для всех сервисов  этого файла по умолчанию
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  # Регистрируем контроллеры бандла, сервисы и репозитории как DI-сервисы
+  flexycms\FlexyTemplatesBundle\Service\TemplatesService: ~
+  flexycms\FlexyTemplatesBundle\Controller\TemplatesController: ~

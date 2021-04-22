@@ -1,0 +1,16 @@
+{% extends '@FlexyAdminFrame/adminpanelbase.html.twig' %}
+
+{% block content %}
+<div class="template-edit">
+	<form action="{{ path('admin_templates_save') }}" method="post">
+		<input type="hidden" name="name" value="{{ template.name }}">
+		<div class="admin-btn-top">
+			<a href="{{ path('admin_templates') }}" class="btn btn-primary back btn"><i class="fas fa-arrow-left"></i><br>Вернуться</a>
+			<button type="submit" data-button="save" class="btn btn-success btn"><i class="fas fa-save"></i><br>Сохранить</button>
+			<button type="submit" data-button="apply" class="btn btn-success btn"><i class="fas fa-check"></i><br>Применить</button>
+		</div>
+		<input type="hidden" name="button" value="submit">
+		<textarea name="content" id="template-code" data-mode="{{ template.mode }}">{{ template.content }}</textarea>
+	</form>
+</div>
+{% endblock %}
